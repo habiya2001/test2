@@ -1,0 +1,33 @@
+[Study02 스프링 환경 설정]
+
+1. [File]→[New]→[Spring Legacy Project]를 선택한다.
+2. "Project name"에 프로젝트명을 입력하고, [Spring MVC Project]를 선택하고 [Next]버튼을 클릭한다.
+3. "top-Lavel pageage"에 com.회사명.프로젝트명(3단계)로 기재후 [Finish]버튼을 클릭한다.
+
+※ 오류 발생시 사용자 폴더→문서→'.m2' 폴더에 자료를 삭제한다.
+
+4. 프로젝트명에서 마우스 오른쪽 버튼을 눌러 [Run As]→[Run on Server]를 선택한다.
+5. "Hello world!"라는 메시지확인하면 첫 스프링 프로젝트를 실행 완료한다.
+
+[톰캣 설정]
+6. [Window]→[Preferences]클릭한다.
+7. [Server]→[Runtime Environment]에서 [Add]버튼을 클릭한다.
+8. "Apache"→"Apache Tomcat v8.5"(설치된 톰캣 서버)를 클릭 후 [Next]버튼을 클릭한다.
+9. [Browse...]버튼을 클릭하여 설치한 톰캣 경로 지정 후 [Finish]버튼을 클릭한다. 
+10. [Apply and Close]버튼을 클릭한다.
+11. 프로젝트명에서 마우스 오른쪽 버튼을 눌러 [Run As]→[Run on Server]를 선택한다.
+12. "Manually define a new server" 지정한 후 "Server type"을 8번과 동일하게 선택 후 [Finish]버튼을 클릭한다.
+13. "Hello world!"라는 메시지확인하면 Tomcat로 실행 완료 확인한다.
+
+[자바 버전 설정]
+STS를 이용해서 스프링 MVC프로젝트를 생성하면 JDK의 버전이 1.6으로 생성된다.
+JDK1.7이상의 버전을 사용하고 싶다면 해당 프로젝트의 'Project Facets'를 변경해야 한다.
+
+14. 프로젝트 선택 후 마우스 우측 클릭→[Properities]를 선택한다.
+15. "Project facets"에서 사용할 JDK 버전으로 변경한다.
+16. "Java Compiler"메뉴에서 현재 프로젝트의 컴파일 환경또한 해당 버전으로 변경한다.
+
+[pom.xml-종속성, 외부라이브러리 추가하는 영역]
+17. 스프링 버전을 5.0.7로 변경한다.
+18. 자바 버전을 JDK 버전으로 변경한다.
+19. 프로젝트에서 마우스 오른쪽 버튼을 눌러 [Maven]→[Update Project]버튼을 클릭한다.  
